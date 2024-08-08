@@ -1,0 +1,6 @@
+let
+Source = #table(type table[LastRefresh=datetime], {{DateTime.LocalNow()}})
+in
+Source
+
+FORMAT(LASTDATE(),"mmm dd, yyyy hh:mm:ss AM/PM")
